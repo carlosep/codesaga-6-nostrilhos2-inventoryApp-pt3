@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
   def new
     @item = Item.new
+    @item_category = ItemCategory.all
   end
 
   def create

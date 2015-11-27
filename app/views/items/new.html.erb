@@ -7,5 +7,7 @@
   <%= f.text_field :features %>
   <%= f.label :asset_number %>
   <%= f.text_field :asset_number %>
-  <%= f.submit %>
+  <%= f.label :item_category %>
+  <%= collection_select(:item, :item_category, ItemCategory.all, :id, :name) %>
+  <%= f.submit "Create Item" %>
 <% end %>

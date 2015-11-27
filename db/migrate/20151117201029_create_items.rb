@@ -5,6 +5,7 @@ class CreateItems < ActiveRecord::Migration
       t.string :description
       t.text :features
       t.string :asset_number
+      t.integer :item_category_id
 
       t.timestamps
     end
